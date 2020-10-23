@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MacOs Project - Login Page</title>
+    <link rel="shortcut icon" href="images/apple-logo.svg" />
+    <link href="//db.onlinewebfonts.com/c/9da41c570d5a221cb2486d78769a076d?family=Neue+Helvetica" rel="stylesheet"
+        type="text/css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <link rel="stylesheet" href="styles/styles-logout.css">
+</head>
+
+<body>
+
+    <div class="logout-main-background">
+        <div class="login-form">
+            <img src="images/apple-logo-white.png" alt="">
+            <form action="" name="login" method="POST">
+                <input id="password" type="password" title="Password: 1234" placeholder="Password: 1234"
+                    name="password">
+                <button type="submit" id="submit-btn">Login</button>
+                <div id="error"></div>
+            </form>
+        </div>
+
+    </div>
+    <script>
+        $(document).ready(function () {
+            $('#submit-btn').click(function () {
+                if ($('input:password').val() == "1234") {
+
+                    window.location.href = '/macos/'
+                } else {
+                        
+                     $("#error").show().text("Wrong Password!");
+                }
+            });
+            $("form").submit(function (event) {
+                event.preventDefault();
+            });
+            $('#password').on("click", function () {
+                $("#error").hide();
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>

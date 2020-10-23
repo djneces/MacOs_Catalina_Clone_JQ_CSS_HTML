@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MacOs Project</title>
+    <link rel="shortcut icon" href="images/apple-logo.svg" />
+    <link href="//db.onlinewebfonts.com/c/9da41c570d5a221cb2486d78769a076d?family=Neue+Helvetica" rel="stylesheet"
+        type="text/css" />
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <div class="menu-bar">
+        <div class="stripe">
+            <div class="menu-items-left">
+                <div class="menu-wrapper">
+                    <ul class="parent" id="main-nav-menu">
+                        <li>
+                            <a href="#" class="menu-items"><img src="images/logo.svg" alt="" id="apple-icon"></a>
+                            <ul id="menu-mac" class="child">
+                                <li>
+                                    <div>About This Mac</div>
+                                </li>
+                                <li>
+                                    <div>System Preferences...</div>
+                                </li>
+                                <li>
+                                    <div>App Store...</div>
+                                </li>
+                                <li class="ui-state-disabled">
+                                    <div>Recent Items</div>
+                                    <div class="item-align-right">▸</div>
+                                </li>
+                                <li class="ui-state-disabled">
+                                    <div>Force Quit</div>
+                                    <div class="item-align-right">⌥⇧⌘⎋</div>
+                                </li>
+                                <li>
+                                    <div>Sleep</div>
+                                </li>
+                                <li>
+                                    <div>Restart...</div>
+                                </li>
+                                <li>
+                                    <div>Shut Down...</div>
+                                </li>
+                                <li>
+                                    <div>Lock Screen</div>
+                                    <div class="item-align-right">⌃⌘Q</div>
+                                </li>
+                                <li>
+                                    <div id="logout"><a href="logout.html">Log Out...</a></div>
+                                    <div class="item-align-right">⇧⌘Q</div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="menu-items" id="finder-button"><strong>Finder</strong></a>
+                            <ul id="menu-finder" class="child">
+                                <li>
+                                    <div>About Finder</div>
+                                </li>
+                                <hr class="spacing-line">
+                                <li>
+                                    <div>Preferences...</div>
+                                    <div class="item-align-right">⌘,</div>
+                                </li>
+                                <hr class="spacing-line">
+                                <li>
+                                    <div>Empty Bin...</div>
+                                    <div class="item-align-right">⇧⌘⌫</div>
+                                </li>
+                                <hr class="spacing-line">
+                                <li class="ui-state-disabled">
+                                    <div>Services</div>
+                                    <div class="item-align-right">▸</div>
+                                </li>
+                                <hr class="spacing-line">
+                                <li>
+                                    <div>Hide Finder</div>
+                                    <div class="item-align-right">⌘H</div>
+                                </li>
+                                <li>
+                                    <div>Hide Others</div>
+                                    <div class="item-align-right">⌥⌘H</div>
+                                </li>
+                                <li class="ui-state-disabled">
+                                    <div>Show All</div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="menu-items" id="file-button">File</a>
+                            <ul id="menu-file" class="child">
+                                <li>
+                                    <div class="item-align-left">New Finder Windows</div>
+                                    <div class="item-align-right">⌘N</div>
+                                </li>
+                                <li>
+                                    <div>New Folder</div>
+                                    <div class="item-align-right">⇧⌘N</div>
+                                </li>
+                                <li class="ui-state-disabled">
+                                    <div>New Folder with Selection</div>
+                                    <div class="item-align-right">⌃⌘N</div>
+                                </li>
+                                <li>
+                                    <div>New Smart Folder</div>
+                                </li>
+                                <li>
+                                    <div>New Tab</div>
+                                    <div class="item-align-right">⌘T</div>
+                                </li>
+                                <li class="ui-state-disabled">
+                                    <div>Open</div>
+                                    <div class="item-align-right">⌘O</div>
+                                </li>
+                                <li class="ui-state-disabled">
+                                    <div>Open With</div>
+                                    <div class="item-align-right">▸</div>
+                                </li>
+                                <li class="ui-state-disabled">
+                                    <div>Print</div>
+                                    <div class="item-align-right">⌘P</div>
+                                </li>
+                                <li class="ui-state-disabled">
+                                    <div>Close Window</div>
+                                    <div class="item-align-right">⌘W</div>
+                                </li>
+                                <hr class="spacing-line">
+                                <li>
+                                    <div>Get Info</div>
+                                    <div class="item-align-right">⌘I</div>
+                                </li>
+                                <li class="ui-state-disabled">
+                                    <div>Rename</div>
+                                </li>
+                                <hr class="spacing-line">
+                                <li class="ui-state-disabled">
+                                    <div>Compres</div>
+                                </li>
+                                <hr class="spacing-line">
+                                <li class="ui-state-disabled">
+                                    <div>Duplicate</div>
+                                    <div class="item-align-right">⌘D</div>
+                                </li>
+                                <li class="ui-state-disabled">
+                                    <div>Make Alias</div>
+                                    <div class="item-align-right">⌃⌘A</div>
+                                </li>
+                                <li class="ui-state-disabled">
+                                    <div>Quick Look</div>
+                                    <div class="item-align-right">⌘Y</div>
+                                </li>
+                                <li class="ui-state-disabled">
+                                    <div>Show Original</div>
+                                    <div class="item-align-right">⌃⌥⌘A</div>
+                                </li>
+                                <li class="ui-state-disabled">
+                                    <div>Add to Dock</div>
+                                    <div class="item-align-right">⌃⇧⌘T</div>
+                                </li>
+                                <hr class="spacing-line">
+                                <li class="ui-state-disabled">
+                                    <div>Move to Bin</div>
+                                    <div class="item-align-right">⌘⌫</div>
+                                </li>
+                                <li class="ui-state-disabled">
+                                    <div>Eject</div>
+                                    <div class="item-align-right">⌘E</div>
+                                </li>
+                                <hr class="spacing-line">
+                                <li class="ui-state-disabled">
+                                    <div>Find</div>
+                                    <div class="item-align-right">⌘F</div>
+                                </li>
+                                <hr class="spacing-line">
+
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="menu-items" id="edit-button">Edit</a>
+                            <ul id="menu-edit" class="child">
+                                <li class="ui-state-disabled">
+                                    <div class="item-align-left">Undo</div>
+                                    <div class="item-align-right">⌘Z</div>
+                                </li>
+                                <li class="ui-state-disabled">
+                                    <div>Redo</div>
+                                    <div class="item-align-right">⇧⌘Z</div>
+                                </li>
+                                <hr class="spacing-line">
+                                <li class="ui-state-disabled">
+                                    <div>Cut</div>
+                                    <div class="item-align-right">⌘X</div>
+                                </li>
+                                <li class="ui-state-disabled">
+                                    <div>Copy</div>
+                                    <div class="item-align-right">⌘C</div>
+                                </li>
+                                <li class="ui-state-disabled">
+                                    <div>Paste</div>
+                                    <div class="item-align-right">⌘V</div>
+                                </li>
+                                <li>
+                                    <div>Select All</div>
+                                    <div class="item-align-right">⌘A</div>
+                                </li>
+                                <hr class="spacing-line">
+                                <li class="ui-state-disabled">
+                                    <div>Show Clipboard</div>
+                                </li>
+                                <hr class="spacing-line">
+                                <li>
+                                    <div>Start Dictation...</div>
+                                    <div class="item-align-right">fn fn</div>
+                                </li>
+                                <li>
+                                    <div>Emoji & Symbols</div>
+                                    <div class="item-align-right">⌃⌘Space</div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="menu-items" id="view-button">View</a>
+                            <ul id="menu-view" class="child">
+                                <li class="ui-state-disabled">
+                                    <div>as Icons</div>
+                                    <div class="item-align-right">⌘1</div>
+                                </li>
+                                <li class="ui-state-disabled">
+                                    <div>as List</div>
+                                    <div class="item-align-right">⌘2</div>
+                                </li>
+                                <li class="ui-state-disabled">
+                                    <div>as Columns</div>
+                                    <div class="item-align-right">⌘3</div>
+                                </li>
+                                <li class="ui-state-disabled">
+                                    <div>as Gallery</div>
+                                    <div class="item-align-right">⌘4</div>
+                                </li>
+                                <hr class="spacing-line">
+                                <li>
+                                    <div>Use Stacks</div>
+                                    <div class="item-align-right">⌃⌘O</div>
+                                </li>
+                                <li>
+                                    <div>Sort By</div>
+                                    <div class="item-align-right">▸</div>
+                                    <ul class="submenu" id="sub-menu">
+                                        <li>
+                                            <div><img src="images/checkbox.svg" alt="" id="checkbox">None</div>
+                                            <div class="item-align-right">⌃⌥⌘O</div>
+                                        </li>
+                                        <li>
+                                            <div>Snap to Grid</div>
+                                        </li>
+                                        <li>
+                                            <div>Name</div>
+                                            <div class="item-align-right">⌃⌥⌘1</div>
+                                        </li>
+                                        <li>
+                                            <div>Kind</div>
+                                            <div class="item-align-right">⌃⌥⌘2</div>
+                                        </li>
+                                        <li>
+                                            <div>Date Last Opened</div>
+                                            <div class="item-align-right">⌃⌥⌘3</div>
+                                        </li>
+                                        <li>
+                                            <div>Date Added</div>
+                                            <div class="item-align-right">⌃⌥⌘4</div>
+                                        </li>
+                                        <li>
+                                            <div>Date Modified</div>
+                                            <div class="item-align-right">⌃⌥⌘5</div>
+                                        </li>
+                                        <li>
+                                            <div>Date Created</div>
+                                        </li>
+                                        <li>
+                                            <div>Size</div>
+                                            <div class="item-align-right">⌃⌥⌘6</div>
+                                        </li>
+                                        <li>
+                                            <div>Tags</div>
+                                            <div class="item-align-right">⌃⌥⌘7</div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <div>Clean Up</div>
+                                </li>
+                                <li>
+                                    <div>Clean Up By</div>
+                                    <div class="item-align-right">▸</div>
+                                    <ul class="submenu" id="sub-menu">
+                                        <li>
+                                            <div>Name</div>
+                                            <div class="item-align-right">⌥⌘1</div>
+                                        </li>
+                                        <li>
+                                            <div>Kind</div>
+                                            <div class="item-align-right">⌥⌘2</div>
+                                        </li>
+                                        <li>
+                                            <div>Date Modified</div>
+                                            <div class="item-align-right">⌥⌘5</div>
+                                        </li>
+                                        <li>
+                                            <div>Date Created</div>
+                                        </li>
+                                        <li>
+                                            <div>Size</div>
+                                            <div class="item-align-right">⌥⌘6</div>
+                                        </li>
+                                        <li>
+                                            <div>Tags</div>
+                                            <div class="item-align-right">⌥⌘7</div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <hr class="spacing-line">
+                                <li class="ui-state-disabled">
+                                    <div>Hide Sidebar</div>
+                                    <div class="item-align-right">⌥⌘S</div>
+                                </li>
+                                <li class="ui-state-disabled">
+                                    <div>Hide Preview</div>
+                                    <div class="item-align-right">⇧⌘P</div>
+                                </li>
+                                <hr class="spacing-line">
+                                <li class="ui-state-disabled">
+                                    <div>Hide Toolbar</div>
+                                    <div class="item-align-right">⌥⌘T</div>
+                                </li>
+                                <li class="ui-state-disabled">
+                                    <div>Show All Tabs</div>
+                                    <div class="item-align-right">⇧⌘\</div>
+                                </li>
+                                <li class="ui-state-disabled">
+                                    <div>Hide Tab Bar</div>
+                                    <div class="item-align-right">⇧⌘T</div>
+                                </li>
+                                <li class="ui-state-disabled">
+                                    <div>Hide Path Bar</div>
+                                    <div class="item-align-right">⌥⌘P</div>
+                                </li>
+                                <li class="ui-state-disabled">
+                                    <div>Hide Status Bar</div>
+                                    <div class="item-align-right">⌘/</div>
+                                </li>
+                                <hr class="spacing-line">
+                                <li class="ui-state-disabled">
+                                    <div>Customize Toolbar...</div>
+                                </li>
+                                <li>
+                                    <div>Customize Touch Bar...</div>
+                                </li>
+                                <hr class="spacing-line">
+                                <li>
+                                    <div>Show View Options</div>
+                                    <div class="item-align-right">⌘J</div>
+                                </li>
+                                <li class="ui-state-disabled">
+                                    <div>Show Preview Options</div>
+                                </li>
+                                <hr class="spacing-line">
+                                <li class="ui-state-disabled">
+                                    <div>Enter Full Screen</div>
+                                    <div class="item-align-right">⌃⌘F</div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="menu-items" id="go-button">Go</a>
+                            <ul id="menu-go" class="child">
+                                <li class="ui-state-disabled">
+                                    <div>Back</div>
+                                    <div class="item-align-right">⌘[</div>
+                                </li>
+                                <li class="ui-state-disabled">
+                                    <div>Forward</div>
+                                    <div class="item-align-right">⌘]</div>
+                                </li>
+                                <hr class="spacing-line">
+                                <li>
+                                    <div><img src="images/menu/recents.png" alt="" class="sidebar-icons"> Recents
+                                    </div>
+                                    <div class="item-align-right">⇧⌘F</div>
+                                </li>
+                                <li>
+                                    <div><img src="images/menu/documents.png" alt="" class="sidebar-icons">
+                                        Documents</div>
+                                    <div class="item-align-right">⇧⌘O</div>
+                                </li>
+                                <li>
+                                    <div><img src="images/menu/desktop.png" alt="" class="sidebar-icons"> Desktop
+                                    </div>
+                                    <div class="item-align-right">⇧⌘D</div>
+                                </li>
+                                <li>
+                                    <div><img src="images/menu/download.png" alt="" class="sidebar-icons"> Downloads
+                                    </div>
+                                    <div class="item-align-right">⌥⌘L</div>
+                                </li>
+                                <li>
+                                    <div><img src="images/menu/home.png" alt="" class="sidebar-icons"> Home</div>
+                                    <div class="item-align-right">⇧⌘H</div>
+                                </li>
+                                <li>
+                                    <div><img src="images/menu/laptop.png" alt="" class="sidebar-icons"> Computer
+                                    </div>
+                                    <div class="item-align-right">⇧⌘C</div>
+                                </li>
+                                <li>
+                                    <div><img src="images/menu/airdrop.png" alt="" class="sidebar-icons"> Air Drop
+                                    </div>
+                                    <div class="item-align-right">⇧⌘R</div>
+                                </li>
+                                <li>
+                                    <div><img src="images/menu/network.png" alt="" class="sidebar-icons"> Network
+                                    </div>
+                                    <div class="item-align-right">⇧⌘K</div>
+                                </li>
+                                <li>
+                                    <div><img src="images/menu/icloud.png" alt="" class="sidebar-icons"> iCloud
+                                        Drive</div>
+                                    <div class="item-align-right">⇧⌘I</div>
+                                </li>
+                                <li>
+                                    <div><img src="images/menu/apps.png" alt="" class="sidebar-icons"> Applications
+                                    </div>
+                                    <div class="item-align-right">⇧⌘A</div>
+                                </li>
+                                <li>
+                                    <div><img src="images/menu/utilities.png" alt="" class="sidebar-icons">
+                                        Utilities</div>
+                                    <div class="item-align-right">⇧⌘U</div>
+                                </li>
+                                <hr class="spacing-line">
+                                <li class="ui-state-disabled">
+                                    <div>Recent Folders</div>
+                                    <div class="item-align-right">▸</div>
+                                </li>
+                                <hr class="spacing-line">
+                                <li>
+                                    <div>Go to Folder...</div>
+                                    <div class="item-align-right">⇧⌘G</div>
+                                </li>
+                                <li>
+                                    <div>Connect to Server...</div>
+                                    <div class="item-align-right">⌘K</div>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="menu-items" id="window-button">Window</a>
+                            <ul id="menu-window" class="child">
+                                <li class="ui-state-disabled">
+                                    <div>Minimise</div>
+                                    <div class="item-align-right">⌘M</div>
+                                </li>
+                                <li class="ui-state-disabled">
+                                    <div>Zoom</div>
+                                </li>
+                                <li class="ui-state-disabled">
+                                    <div>Move Window to Left Side of Screen</div>
+                                </li>
+                                <li class="ui-state-disabled">
+                                    <div>Move Window to Right Side of Screen</div>
+                                </li>
+                                <hr class="spacing-line">
+                                <li class="ui-state-disabled">
+                                    <div>Move to iPad</div>
+                                </li>
+                                <li class="ui-state-disabled">
+                                    <div>Cycle Through Windows</div>
+                                    <div class="item-align-right">⌘`</div>
+                                </li>
+                                <hr class="spacing-line">
+                                <li class="ui-state-disabled">
+                                    <div>Show Previous Tab</div>
+                                    <div class="item-align-right">⌃⇧⇥</div>
+                                </li>
+                                <li class="ui-state-disabled">
+                                    <div>Show Next Tab</div>
+                                    <div class="item-align-right">⌃⇥</div>
+                                </li>
+                                <li class="ui-state-disabled">
+                                    <div>Move Tab to New Window</div>
+                                </li>
+                                <li class="ui-state-disabled">
+                                    <div>Merge All Windows</div>
+                                </li>
+                                <hr class="spacing-line">
+                                <li>
+                                    <div>Bring All to Front</div>
+                                </li>
+                                <hr class="spacing-line">
+                                <li>
+                                    <div>images</div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="menu-items" id="help-button">Help</a>
+                            <ul id="menu-help" class="child">
+                                <li id="search-input" class="ui-state-disabled">
+                                    <div>Search</div>
+                                    <form action=""><input type="text"></form>
+                                </li>
+                                <li>
+                                    <div>macOS Help</div>
+                                </li>
+                                <hr class="spacing-line">
+                                <li>
+                                    <div>See What's New in macOS</div>
+                                </li>
+                                <li>
+                                    <div>New to Mac? Tour the Basics</div>
+                                </li>
+                                <li>
+                                    <div>Get to know your MacBook Pro</div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="menu-items-right">
+                <a href="#" id="battery-level">100%</a>
+                <a href="#" class="menu-items"></span><img src="images/battery.svg" alt="" width="22px"></a>
+                <a href="#" class="menu-items"><span id="current-time"></span></a>
+                <a href="#" class="menu-items"><img src="images/launcher2.svg" alt=""></a>
+            </div>
+        </div>
+    </div>
+    <div class="desktop-folders">
+        <div id="position-box" class="ui-widget-content folder-style"><img src="images/folder-icon.png" alt=""
+                class="folder-icon">
+            <span class="icon-font">Web Development</span>
+        </div>
+        <div id="position-box2" class="ui-widget-content folder-style"><img src="images/folder-icon.png" alt=""
+                class="folder-icon">
+            <span class="icon-font">My Projects</span>
+        </div>
+    </div>
+    <div class="resizable-windows">
+        <div id="resizable-box" class="ui-widget-content resizable">
+            <div class="box-header">
+                <div class="control-buttons">
+                    <div class="buttons">
+                        <img src="images/finder/red.png" alt="" id="red-cross">
+                        <img src="images/finder/yellow.png" alt="">
+                        <img src="images/finder/green.png" alt="">
+                    </div>
+                    <div class="folder-name">
+                        <img src="images/folder-icon.png" alt=""><span> finder</span>
+                    </div>
+                </div>
+                <div class="control-buttons2">
+                    <div class="buttons-left">
+                        <button><img src="images/finder/left-arrow.svg" alt=""></button>
+                        <button><img src="images/finder/right-arrow.svg" alt=""></button>
+                    </div>
+                    <div class="buttons-right">
+                        <div class="menu-icon-buttons">
+                            <div class="sort-button">
+                                <button><img src="images/finder/menu1.svg" alt=""></button>
+                                <button><img src="images/finder/menu2.svg" alt=""></button>
+                                <button><img src="images/finder/menu3.svg" alt=""></button>
+                                <button><img src="images/finder/menu4.svg" alt=""></button>
+                            </div>
+                            <div class="setting-button">
+                                <button><img src="images/finder/menu5.svg" alt=""><span><img
+                                            src="images/finder/expand.svg" alt=""></span></button>
+                                <button><img src="images/finder/settings.svg" alt=""><span><img
+                                            src="images/finder/expand.svg" alt=""></span></button>
+                                <button><img src="images/finder/export.svg" alt=""></button>
+                                <button><img src="images/finder/tag.png" alt=""></button>
+                            </div>
+                        </div>
+                        <div class="search-menu-bar">
+                            <input type="text" placeholder="Search">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box-body">
+                <div class="box-sidebar ">
+                    <div class="sidebar-background">
+                        <div class="sidebar-items">
+                            <div class="item-category">
+                                Favourites
+                            </div>
+                            <div class="item-selected">
+                                <img src="images/menu/airdrop.png" alt=""><a href="#">AirDrop</a>
+                            </div>
+                            <div class="item-selected">
+                                <img src="images/menu/recents.png" alt=""><a href="#">Recents</a>
+                            </div>
+                            <div class="item-selected" name="applications">
+                                <img src="images/menu/apps.png" alt=""><a href="#">Applications</a>
+                            </div>
+                            <div class="item-selected">
+                                <img src="images/menu/folder.png" alt=""><a href="#">Google Drive</a>
+                            </div>
+                            <div class="item-selected">
+                                <img src="images/menu/desktop.png" alt=""><a href="#">Desktop</a>
+                            </div>
+                            <div class="item-selected">
+                                <img src="images/menu/documents.png" alt=""><a href="#">Documents</a>
+                            </div>
+                            <div class="item-selected">
+                                <img src="images/menu/download.png" alt=""><a href="#">Downloads</a>
+                            </div>
+                            <div class="item-selected">
+                                <img src="images/menu/pictures.png" alt=""><a href="#">Pictures</a>
+                            </div>
+                            <div class="item-category">
+                                iCloud
+                            </div>
+                            <div class="item-selected">
+                                <img src="images/menu/icloud.png" alt=""><a href="#">iCloud Drive</a>
+                            </div>
+                            <div class="item-category">
+                                Locations
+                            </div>
+                            <div class="item-selected">
+                                <img src="images/menu/laptop.png" alt=""><a href="#">Your MacBook Pro</a>
+                            </div>
+                            <div class="item-category">
+                                Tags
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-main" id="main-box">
+                    <div id="sidebar-airdrop" class="app-layout hide">
+                        <div class="align-center"><img src="images/apps/air.png" alt="">AirDrop</div>
+                    </div>
+                    <div id="sidebar-recents" class="app-layout hide">
+                        <div class="align-center"><img src="images/apps/recents/camera.svg" alt="">Camera</div>
+                        <div class="align-center"><img src="images/apps/recents/notes.png" alt="">Notes</div>
+                        <div class="align-center"><img src="images/apps/recents/office.svg" alt="">Office</div>
+                        <div class="align-center"><img src="images/apps/recents/settings.png" alt="">Settings</div>
+                        <div class="align-center"><img src="images/apps/recents/window.png" alt="">Window</div>
+                    </div>
+
+                    <div id="sidebar-applications" class="app-layout hide">
+                        <div class="align-center"><img src="images/apps/ae.png" alt="">Adobe After Effects CC 2019
+                        </div>
+                        <div class="align-center"><img src="images/apps/air.png" alt="">AirDrop</div>
+                        <div class="align-center"><img src="images/apps/backup.png" alt="">Time Machine</div>
+                        <div class="align-center"><img src="images/apps/bitcoin.png" alt="">Bitcoin</div>
+                        <div class="align-center"><img src="images/apps/book.png" alt="">Books</div>
+                        <div class="align-center"><img src="images/apps/calculator.png" alt="">Calculator</div>
+                        <div class="align-center"><img src="images/apps/calendar.png" alt="">Calendar</div>
+                        <div class="align-center"><img src="images/apps/chrome.png" alt="">Google Chrome</div>
+                        <div class="align-center"><img src="images/apps/mail.png" alt="">Mail</div>
+                        <div class="align-center"><img src="images/apps/messages.png" alt="">Messages</div>
+                        <div class="align-center"><img src="images/apps/music.png" alt="">Music</div>
+                        <div class="align-center"><img src="images/apps/onedrive.png" alt="">Google One Drive</div>
+                        <div class="align-center"><img src="images/apps/pics.png" alt="">Pictures</div>
+                        <div class="align-center"><img src="images/apps/ps.png" alt="">Adobe Photoshop CC 2019</div>
+                        <div class="align-center"><img src="images/apps/safari.png" alt="">Safari</div>
+                        <div class="align-center"><img src="images/apps/spotify.png" alt="">Spotify</div>
+                        <div class="align-center"><img src="images/apps/stockmarket.png" alt="">Stockmarket</div>
+                        <div class="align-center"><img src="images/apps/stocks.png" alt="">Stocks</div>
+                        <div class="align-center"><img src="images/apps/textedit.png" alt="">TextEdit</div>
+                        <div class="align-center"><img src="images/apps/tv.png" alt="">Apple Tv</div>
+                        <div class="align-center"><img src="images/apps/twitter.png" alt="">Twitter</div>
+                        <div class="align-center"><img src="images/apps/xcode.png" alt="">Xcode</div>
+                    </div>
+                    <div id="sidebar-google-drive" class="app-layout hide">
+                        <div class="align-center"><img src="images/folder-icon.png" alt="">My Documents</div>
+                    </div>
+                    <div id="sidebar-desktop" class="app-layout hide">
+                        <div class="align-center"><img src="images/folder-icon.png" alt="">Web Development</div>
+                        <div class="align-center"><img src="images/folder-icon.png" alt="">My Projects</div>
+                    </div>
+                    <div id="sidebar-documents" class="app-layout hide">
+                        <div class="align-center"><img src="images/folder-icon.png" alt="">My Local Documents</div>
+                    </div>
+                    <div id="sidebar-pictures" class="app-layout hide">
+                        <div class="align-center"><img src="images/apps/photos.png" alt="">Photos</div>
+                    </div>
+                    <div id="sidebar-your-macbook-pro" class="app-layout hide">
+                        <div class="align-center"><img src="images/disk.png" alt="">Macintosh HD</div>
+                        <div class="align-center"><img src="images/globe.png" alt="">Network</div>
+                    </div>
+                </div>
+            </div>
+            <div class="box-footer"></div>
+        </div>
+    </div>
+    <div class="dock-menu">
+        <div class="background-dock">
+            <nav class="main-nav">
+                <ul class="main-nav-list">
+                    <li class="dock-icons"><img src="images/apps/finder.png" alt="Finder" title="Finder"></li>
+                    <li class="dock-icons"><img src="images/apps/launchpad.png" alt="launchpad" title="Launchpad">
+                    </li>
+                    <li class="dock-icons"><img src="images/apps/safari.png" alt="Safari" title="Safari"></li>
+                    <li class="dock-icons"><img src="images/apps/spotify.png" alt="Spotify" title="Spotify"></li>
+                    <li class="dock-icons"><img src="images/apps/photos.png" alt="Photos" title="Photos"></li>
+                    <li class="dock-icons"><img src="images/apps/calendar.png" alt="Calendar" title="Calendar"></li>
+                    <li class="dock-icons"><img src="images/apps/appstore.png" alt="Appstore" title="Appstore"></li>
+                    <li class="dock-icons"><img src="images/apps/messages.png" alt="Messages" title="Messages"></li>
+                    <li class="dock-icons"><img src="images/apps/mail.png" alt="Mail" title="Mail"></li>
+                    <li class="dock-icons"><img src="images/apps/trash.png" alt="Trash" title="Trash"></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <script src="lib/jquery-3.5.1.min.js"></script>
+    <script src="lib/jquery.resizeOnApproach.1.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css"
+        integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ=="
+        crossorigin="anonymous" />
+    <script src="lib/jquery-ui.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>

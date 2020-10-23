@@ -1,0 +1,61 @@
+/* ************* LOGOUT PAGE ******************* */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+    font-family: Helvetica, Arial, sans-serif
+}
+
+@import url(//db.onlinewebfonts.com/c/9da41c570d5a221cb2486d78769a076d?family=Neue+Helvetica);
+
+@font-face {
+    font-family: "Neue Helvetica";
+    src: url("//db.onlinewebfonts.com/t/9da41c570d5a221cb2486d78769a076d.eot");
+    src: url("//db.onlinewebfonts.com/t/9da41c570d5a221cb2486d78769a076d.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/9da41c570d5a221cb2486d78769a076d.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/9da41c570d5a221cb2486d78769a076d.woff") format("woff"), url("//db.onlinewebfonts.com/t/9da41c570d5a221cb2486d78769a076d.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/9da41c570d5a221cb2486d78769a076d.svg#Neue Helvetica") format("svg");
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.login-form input {
+    border-radius: 3px;
+    border: none;
+    background-color: rgb(124, 124, 124);
+    height: 1.5rem;
+    margin-top: 2rem;
+}
+
+input:focus {
+    background-color: rgb(143, 143, 143);
+    outline: none;
+  }
+
+button {
+    background-color: rgb(143, 143, 143); 
+    border: none;
+    border-radius: 3px;
+    height: 1.6rem;
+    outline: none;
+}
+
+button:hover {
+    background-color: rgb(109, 109, 109);
+}
+
+#error {
+    display: none;
+    border-radius: 3px;
+    height: 1.5rem;
+    background-color: brown;
+    color: white;
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: 1rem;
+    padding-top: 0.3rem;
+}
