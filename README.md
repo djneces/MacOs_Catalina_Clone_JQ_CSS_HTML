@@ -2,7 +2,7 @@
 MacOS GUI clone using JQ UI, CSS, HTML
 
 Functions available:
-- menus, submenus (not clickable)
+- menus, submenus (not clickable, except for logout)
 - draggable window and icons
 - resizable window
 - sidebar links in Finder connected to different content
